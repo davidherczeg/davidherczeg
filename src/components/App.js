@@ -1,17 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Navbar from './Navbar';
+import { Pane } from 'evergreen-ui';
+import heroImg from '../assets/imgs/hero.jpg';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Welcome David Herczeg's personal website</h1>
-        <p>The site is currently under development and will be up soon!</p>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <Pane>
+      <Navbar />
+      <Pane>
+        <img src={heroImg} width='100%' height='auto' alt='...' />
+        <Pane></Pane>
+      </Pane>
+    </Pane>
+  );
 }
 
-App.propTypes = {}
+App.propTypes = {};
 
 export default App;
