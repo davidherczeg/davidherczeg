@@ -1,4 +1,8 @@
 @tailwind base;
 @tailwind components;
 
+.nav-btn {
+  @apply outline-none !important;
+}
+
 @tailwind utilities;
