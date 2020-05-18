@@ -1,6 +1,4 @@
 import Navbar from '../components/Navbar';
-import NavDrawer from '../components/NavDrawer';
-import Overlay from '../components/Overlay';
 
 export default () => {
   return (

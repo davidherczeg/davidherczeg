@@ -21,7 +21,8 @@
   "dependencies": {
     "next": "^9.4.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-transition-group": "^4.4.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",

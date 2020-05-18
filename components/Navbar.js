@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Logo from '../assets/logo.svg';
 import Menu from '../assets/menu.svg';
-import NavDrawer from './NavDrawer';
 import useDrawer from '../hooks/useDrawer';
+import dynamic from 'next/dynamic';
 
 const links = [
   { href: '/home', label: 'About' },
@@ -10,6 +10,8 @@ const links = [
   { href: '/home', label: 'Portfolio' },
   { href: '/home', label: 'Contact' },
 ];
+
+const NavDrawer = dynamic(() => import('./NavDrawer'), { ssr: false });
 
 export default () => {
   const { isShowing, toggle } = useDrawer();
