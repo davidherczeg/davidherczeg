@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Close from '../assets/close.svg';
+import Close from '../assets/svg/close.svg';
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 

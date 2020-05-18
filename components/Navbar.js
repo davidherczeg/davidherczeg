@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Logo from '../assets/logo.svg';
-import Menu from '../assets/menu.svg';
+import Logo from '../assets/svg/logo.svg';
+import Menu from '../assets/svg/menu.svg';
 import useDrawer from '../hooks/useDrawer';
 import dynamic from 'next/dynamic';
 
@@ -17,7 +17,7 @@ export default () => {
   const { isShowing, toggle } = useDrawer();
 
   return (
-    <header className='flex justify-between items-center px-16 md:px-32 py-4 bg-gray-500'>
+    <header className='flex justify-between items-center px-16 md:px-32 py-4 bg-blue-200'>
       <div>
         <Link href='/home'>
           <a className=''>
