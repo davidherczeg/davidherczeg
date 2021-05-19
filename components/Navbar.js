@@ -17,11 +17,11 @@ export default () => {
   const { isShowing, toggle } = useDrawer();
 
   return (
-    <header className='flex justify-between items-center px-16 md:px-32 py-4 bg-blue-200'>
+    <header className='flex justify-between items-center px-16 md:px-32 py-4 bg-black'>
       <div>
         <Link href='/home'>
           <a className=''>
-            <Logo className='w-16' />
+            <Logo className='w-40 h-auto' />
           </a>
         </Link>
       </div>
@@ -36,7 +36,7 @@ export default () => {
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
               <Link href={href}>
-                <a className=''>{label}</a>
+                <a className='text-white'>{label}</a>
               </Link>
             </li>
           ))}

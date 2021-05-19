@@ -10,7 +10,7 @@ const links = [
   { href: '/home', label: 'Contact' },
 ];
 
-export default (props) => {
+export default props => {
   const { isShowing, toggle } = props;
 
   return ReactDOM.createPortal(
@@ -38,7 +38,7 @@ export default (props) => {
               {links.map(({ href, label }) => (
                 <li key={`${href}${label}`}>
                   <Link href={href}>
-                    <a className=''>{label}</a>
+                    <a className='text-white'>{label}</a>
                   </Link>
                 </li>
               ))}
