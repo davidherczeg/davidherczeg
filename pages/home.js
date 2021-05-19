@@ -1,13 +1,13 @@
 import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import Section from '../components/Section';
 
 export default () => {
   return (
-    <div className='w-full h-screen bg-blue-100'>
+    <div className='w-full h-screen'>
       <Navbar />
-      <div className='w-full bg-black' style={{ height: 500 }}>
-        <h1 className='text-white'>Full Stack Developer & Designer</h1>
-      </div>
-      <div className='w-full bg-white' style={{ height: 500 }}></div>
+      <Hero />
+      <Section />
     </div>
   );
 };
