@@ -23,7 +23,8 @@
     "next-images": "^1.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-transition-group": "^4.4.1"
+    "react-transition-group": "^4.4.1",
+    "typeface-mallanna": "^1.1.13"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import 'typeface-mallanna';
 import '../styles/styles.css';
 
 export default ({ Component, pageProps }) => {
