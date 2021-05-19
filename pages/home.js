@@ -7,7 +7,7 @@ export default () => {
     <div className='w-full h-screen'>
       <Navbar />
       <Hero />
-      <Section />
+      <Section label='About Me' />
     </div>
   );
 };
