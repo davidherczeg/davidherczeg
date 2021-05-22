@@ -5,7 +5,7 @@ import useDrawer from '../hooks/useDrawer';
 import dynamic from 'next/dynamic';
 
 const links = [
-  { href: '/home', label: 'About' },
+  { href: '/about', label: 'About' },
   { href: '/home', label: 'Blog' },
   { href: '/home', label: 'Projects' },
   { href: '/home', label: 'Contact' },
