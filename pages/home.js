@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Section from '../components/Section';
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 
 export default () => {
   return (
@@ -13,18 +14,17 @@ export default () => {
         <div className='flex'>
           <div>
             <p className='text-lg mb-4'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              eget rhoncus enim. Nulla porta leo quis iaculis rhoncus.
-              Suspendisse purus diam, fermentum sit amet pretium at, elementum
-              eu purus. Nunc quis feugiat tortor. Morbi tincidunt ligula nisi,
-              eget eleifend nisi commodo ac. Integer commodo vehicula lectus, eu
-              facilisis lectus vulputate id. Donec euismod orci enim, vitae
-              accumsan arcu commodo sed. Donec porttitor tortor lacus, eu
-              euismod dui luctus et. Cras luctus, magna in semper blandit, massa
-              quam commodo dui, at suscipit eros elit ut dolor. In blandit
-              vestibulum libero, quis laoreet mauris viverra id. Duis
-              condimentum mollis enim, sit amet finibus quam sodales vitae.
-              Quisque quis suscipit metus, in ultrices felis.
+              I'm a full-stack developer with 2 years of professional experience
+              developing web applications for production ready systems. Nulla
+              porta leo quis iaculis rhoncus. Nunc quis feugiat tortor. Morbi
+              tincidunt ligula nisi, eget eleifend nisi commodo ac. Integer
+              commodo vehicula lectus, eu facilisis lectus vulputate id. Donec
+              euismod orci enim, vitae accumsan arcu commodo sed. Donec
+              porttitor tortor lacus, eu euismod dui luctus et. Cras luctus,
+              magna in semper blandit, massa quam commodo dui, at suscipit eros
+              elit ut dolor. In blandit vestibulum libero, quis laoreet mauris
+              viverra id. Duis condimentum mollis enim, sit amet finibus quam
+              sodales vitae. Quisque quis suscipit metus, in ultrices felis.
             </p>
             <p className='text-lg mb-4'>
               Nulla hendrerit enim eget sem bibendum maximus. Pellentesque
@@ -79,7 +79,7 @@ export default () => {
           />
         </div>
       </Section>
-      <Section label='Work Experience' />
+      <Footer />
     </div>
   );
 };
