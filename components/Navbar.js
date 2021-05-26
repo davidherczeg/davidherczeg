@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 
 const links = [
   { href: '/about', label: 'About' },
-  { href: '/home', label: 'Blog' },
+  { href: '/blog', label: 'Blog' },
   { href: '/projects', label: 'Projects' },
   { href: '/home', label: 'Contact' },
 ];
