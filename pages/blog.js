@@ -10,9 +10,13 @@ export default () => {
     <div className='w-full h-screen'>
       <Navbar />
       <Section label='Blog'>
-        <div className='flex flex-col space-y-8'>
-          <Blog />
-          <Blog />
+        <div className='flex'>
+          <div className='flex-1' />
+          <div className='flex-none flex flex-col space-y-8 divide-y'>
+            <Blog />
+            <Blog />
+          </div>
+          <div className='flex-1' />
         </div>
       </Section>
       <Footer />
