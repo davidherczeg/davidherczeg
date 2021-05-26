@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Blog = props => {
   return (
     <div className='flex-1 px-64'>
-      <div className='flex rounded-lg shadow-md px-4 py-2 space-x-8'>
+      <div className='flex rounded-md shadow-md px-4 py-2 space-x-8'>
         <div className='flex-none'>
           <Image
             className=''

@@ -6,7 +6,7 @@ const Card = props => {
     props;
 
   return (
-    <div className='relative flex flex-col w-80 rounded-lg shadow-lg'>
+    <div className='relative flex flex-col w-80 rounded-md shadow-lg'>
       <div className='flex-none'>
         <Image
           className='rounded-t-lg'

@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/davidherczeg/davidherczeg#readme",
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.2",
     "next": "^10.2.1",
     "next-images": "^1.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-hook-form": "^7.6.7",
     "react-transition-group": "^4.4.1",
     "typeface-mallanna": "^1.1.13"
   },

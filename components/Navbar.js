@@ -8,7 +8,7 @@ const links = [
   { href: '/about', label: 'About' },
   { href: '/blog', label: 'Blog' },
   { href: '/projects', label: 'Projects' },
-  { href: '/home', label: 'Contact' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 const NavDrawer = dynamic(() => import('./NavDrawer'), { ssr: false });
