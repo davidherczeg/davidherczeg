@@ -11,8 +11,8 @@ export default () => {
       <Navbar />
       <Hero />
       <Section label=''>
-        <div className='flex space-x-32'>
-          <div className='flex-none'>
+        <div className='flex flex-col lg:flex-row space-y-8 lg:space-x-24 lg:space-y-0'>
+          <div className='flex-none flex justify-center lg:block lg:justify-start'>
             <Image
               className='rounded-full'
               src='/david_herczeg.jpg'
@@ -21,8 +21,8 @@ export default () => {
               height={300}
             />
           </div>
-          <div>
-            <p className='text-lg mb-4'>
+          <div className='space-y-4'>
+            <p className='text-lg'>
               I'm a full-stack developer with 2 years of professional experience
               developing web applications for production ready systems. Nulla
               porta leo quis iaculis rhoncus. Nunc quis feugiat tortor. Morbi
@@ -35,7 +35,7 @@ export default () => {
               viverra id. Duis condimentum mollis enim, sit amet finibus quam
               sodales vitae. Quisque quis suscipit metus, in ultrices felis.
             </p>
-            <p className='text-lg mb-4'>
+            <p className='text-lg'>
               Nulla hendrerit enim eget sem bibendum maximus. Pellentesque
               habitant morbi tristique senectus et netus et malesuada fames ac
               turpis egestas. Duis eu consequat massa. Aenean pellentesque dolor
