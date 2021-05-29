@@ -1,17 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Logo from '../assets/svg/logo.svg';
-import Menu from '../assets/svg/menu.svg';
 import useDrawer from '../hooks/useDrawer';
 import dynamic from 'next/dynamic';
 import { links } from '../data/links';
 
 const NavDrawer = dynamic(() => import('./NavDrawer'), { ssr: false });
 
-export default () => {
+export default props => {
   const { isShowing, toggle } = useDrawer();
 
   return (
-    <header className='flex justify-between items-center px-16 md:px-32 py-4 bg-transparent'>
+    <header className='flex justify-between items-center px-12 md:px-32 lg:px-16 xl:px-32 py-4 bg-black'>
       <div>
         <Link href='/home'>
           <a className=''>
@@ -21,7 +21,7 @@ export default () => {
       </div>
       <div className='sm:hidden'>
         <button className='nav-btn' onClick={toggle}>
-          <Menu className='w-auto' />
+          <Image src='/menu.svg' alt='menu' width={20} height={20} />
         </button>
         <NavDrawer isShowing={isShowing} toggle={toggle} />
       </div>

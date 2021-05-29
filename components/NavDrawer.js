@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import Close from '../assets/svg/close.svg';
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 import { links } from '../data/links';
@@ -21,10 +21,10 @@ export default props => {
         timeout={300}
         unmountOnExit
       >
-        <div className='fixed w-64 h-full bg-gray-200 right-0 top-0 z-50 shadow-2xl'>
+        <div className='fixed w-64 h-full bg-black right-0 top-0 z-50 shadow-2xl'>
           <div className='flex px-8 py-4 justify-end'>
             <button className='nav-btn' onClick={toggle}>
-              <Close className='w-4' />
+              <Image src='/close.svg' alt='Close' width={20} height={20} />
             </button>
           </div>
           <nav className='p-4'>
