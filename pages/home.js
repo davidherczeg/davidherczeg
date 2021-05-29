@@ -10,8 +10,17 @@ export default () => {
     <div className='w-full h-screen'>
       <Navbar />
       <Hero />
-      <Section label='About Me'>
-        <div className='flex'>
+      <Section label=''>
+        <div className='flex space-x-32'>
+          <div className='flex-none'>
+            <Image
+              className='rounded-full'
+              src='/david_herczeg.jpg'
+              alt='David Herczeg'
+              width={300}
+              height={300}
+            />
+          </div>
           <div>
             <p className='text-lg mb-4'>
               I'm a full-stack developer with 2 years of professional experience
@@ -36,18 +45,9 @@ export default () => {
               ac mi tincidunt posuere.
             </p>
           </div>
-          <div className='flex-none mx-8'>
-            <Image
-              className='rounded-full'
-              src='/david_herczeg.jpg'
-              alt='David Herczeg'
-              width={300}
-              height={300}
-            />
-          </div>
         </div>
       </Section>
-      <Section label='Projects'>
+      <Section label=''>
         <div className='flex justify-around'>
           <Card
             imagePath='/tourloop.png'

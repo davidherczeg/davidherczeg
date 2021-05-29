@@ -17,7 +17,7 @@ export default () => {
   const { isShowing, toggle } = useDrawer();
 
   return (
-    <header className='flex justify-between items-center px-16 md:px-32 py-4 bg-black'>
+    <header className='flex justify-between items-center px-16 md:px-32 py-4 bg-transparent'>
       <div>
         <Link href='/home'>
           <a className=''>
