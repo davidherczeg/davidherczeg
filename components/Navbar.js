@@ -11,7 +11,7 @@ export default props => {
   const { isShowing, toggle } = useDrawer();
 
   return (
-    <header className='flex justify-between items-center px-12 md:px-32 lg:px-16 xl:px-32 py-4 bg-black'>
+    <header className='flex justify-between items-center px-24 md:px-32 lg:px-16 xl:px-32 py-4 bg-black'>
       <div>
         <Link href='/home'>
           <a className=''>
@@ -26,7 +26,7 @@ export default props => {
         <NavDrawer isShowing={isShowing} toggle={toggle} />
       </div>
       <nav className='hidden sm:block'>
-        <ul className='flex items-center space-x-8'>
+        <ul className='flex items-center space-x-4 md:space-x-8'>
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
               <Link href={href}>
