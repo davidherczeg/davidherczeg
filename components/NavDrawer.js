@@ -2,13 +2,7 @@ import Link from 'next/link';
 import Close from '../assets/svg/close.svg';
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
-
-const links = [
-  { href: '/home', label: 'About' },
-  { href: '/home', label: 'Blog' },
-  { href: '/home', label: 'Projects' },
-  { href: '/home', label: 'Contact' },
-];
+import { links } from '../data/links';
 
 export default props => {
   const { isShowing, toggle } = props;

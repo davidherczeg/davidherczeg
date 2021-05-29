@@ -3,13 +3,7 @@ import Logo from '../assets/svg/logo.svg';
 import Menu from '../assets/svg/menu.svg';
 import useDrawer from '../hooks/useDrawer';
 import dynamic from 'next/dynamic';
-
-const links = [
-  { href: '/about', label: 'About' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/contact', label: 'Contact' },
-];
+import { links } from '../data/links';
 
 const NavDrawer = dynamic(() => import('./NavDrawer'), { ssr: false });
 

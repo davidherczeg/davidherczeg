@@ -1,13 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../assets/svg/logo.svg';
-
-const links = [
-  { href: '/home', label: 'About' },
-  { href: '/home', label: 'Blog' },
-  { href: '/home', label: 'Projects' },
-  { href: '/home', label: 'Contact' },
-];
+import { links } from '../data/links';
 
 const Footer = props => {
   return (
@@ -76,7 +70,7 @@ const Footer = props => {
         <div className='flex-initial flex items-center justify-center px-8'>
           <p className='text-white'>
             I can be reached at{' '}
-            <span className='text-pink-400'>david.herczeg@live.ca</span>
+            <span className='text-purple-500'>david.herczeg@live.ca</span>
           </p>
         </div>
       </div>
