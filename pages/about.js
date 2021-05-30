@@ -7,12 +7,12 @@ import Footer from '../components/Footer';
 
 export default () => {
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen flex flex-col'>
       <Navbar />
       <Section label='About Me'>
-        <div className='flex'>
-          <div>
-            <p className='text-lg mb-4'>
+        <div className='flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:space-x-8'>
+          <div className='space-y-4'>
+            <p className='text-lg'>
               I'm a full-stack developer with 2 years of professional experience
               developing web applications for production ready systems. Nulla
               porta leo quis iaculis rhoncus. Nunc quis feugiat tortor. Morbi
@@ -25,7 +25,7 @@ export default () => {
               viverra id. Duis condimentum mollis enim, sit amet finibus quam
               sodales vitae. Quisque quis suscipit metus, in ultrices felis.
             </p>
-            <p className='text-lg mb-4'>
+            <p className='text-lg'>
               Nulla hendrerit enim eget sem bibendum maximus. Pellentesque
               habitant morbi tristique senectus et netus et malesuada fames ac
               turpis egestas. Duis eu consequat massa. Aenean pellentesque dolor
@@ -35,7 +35,7 @@ export default () => {
               ac mi tincidunt posuere.
             </p>
           </div>
-          <div className='flex-none mx-8'>
+          <div className='flex-none flex justify-center lg:flex-col lg:justify-start'>
             <Image
               className='rounded-full'
               src='/david_herczeg.jpg'

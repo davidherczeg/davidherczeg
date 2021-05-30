@@ -6,7 +6,7 @@ import Project from '../components/Project';
 
 export default () => {
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen flex flex-col'>
       <Navbar />
       <Section label='Projects'>
         <div className='flex'>

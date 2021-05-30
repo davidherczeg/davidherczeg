@@ -7,7 +7,7 @@ import Blog from '../components/Blog';
 
 export default () => {
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen flex flex-col'>
       <Navbar />
       <Section label='Blog'>
         <div className='flex'>

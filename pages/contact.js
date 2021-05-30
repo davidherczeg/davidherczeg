@@ -16,7 +16,7 @@ export default () => {
   const onSubmit = async data => {};
 
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen flex flex-col'>
       <Navbar />
       <Section label='Contact'>
         <div className='flex'>
