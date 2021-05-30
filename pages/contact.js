@@ -19,11 +19,10 @@ export default () => {
     <div className='w-full h-screen flex flex-col'>
       <Navbar />
       <Section label='Contact'>
-        <div className='flex'>
-          <div className='flex-1' />
+        <div className='flex justify-center'>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className='flex-1 flex flex-col space-y-4'
+            className='flex flex-col space-y-4 w-96'
           >
             <h1 className='text-base'>
               Please fill out the following form to send me a message. I will
@@ -80,7 +79,6 @@ export default () => {
               Send Message
             </button>
           </form>
-          <div className='flex-1' />
         </div>
       </Section>
       <Footer />
