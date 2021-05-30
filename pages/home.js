@@ -11,7 +11,7 @@ export default () => {
       <Navbar />
       <Hero />
       <Section label=''>
-        <div className='flex flex-col lg:flex-row space-y-8 lg:space-x-24 lg:space-y-0'>
+        <div className='flex flex-col lg:flex-row space-y-12 lg:space-x-24 lg:space-y-0'>
           <div className='flex-none flex justify-center lg:block lg:justify-start'>
             <Image
               className='rounded-full'
@@ -48,7 +48,7 @@ export default () => {
         </div>
       </Section>
       <Section label=''>
-        <div className='flex justify-around'>
+        <div className='flex flex-col items-center lg:items-stretch space-y-12 lg:space-x-4 lg:space-y-0 lg:flex-row lg:justify-around'>
           <Card
             imagePath='/tourloop.png'
             imageAlt='TourLoop'
