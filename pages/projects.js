@@ -9,13 +9,13 @@ export default () => {
     <div className='w-full h-screen flex flex-col'>
       <Navbar />
       <Section label='Projects'>
-        <div className='flex'>
+        <div className='flex space-x-12'>
           <div className='flex flex-col flex-1 divide-y'>
             <Project />
             <Project />
           </div>
-          <div className='flex-none w-64 mx-8 pl-16 py-8'>
-            <ul className='list-inside space-y-4 border-l-2 border-pink-500 pl-4'>
+          <div className='hidden flex-none w-40 py-8 xl:block'>
+            <ul className='list-inside space-y-4 border-l-2 border-purple-500 pl-4'>
               <li className='text-base'>TourLoop</li>
               <li className='text-base'>TourLoop</li>
               <li className='text-base'>TourLoop</li>

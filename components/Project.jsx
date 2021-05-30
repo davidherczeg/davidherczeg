@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Project = props => {
   return (
-    <div className='flex flex-1 py-8 space-x-12'>
+    <div className='flex flex-col flex-1 py-8 space-y-8 lg:flex-row lg:space-x-12 lg:space-y-0'>
       <h1 className='flex-none font-bold text-2xl'>TourLoop</h1>
       <div className='flex-1 flex flex-col space-y-2'>
         <div className='flex-none flex items-center space-x-8'>
