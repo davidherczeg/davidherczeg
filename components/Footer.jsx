@@ -6,7 +6,10 @@ import SocialLogo from './SocialLogo';
 
 const Footer = props => {
   return (
-    <div className='w-full bg-black px-24 md:px-32 lg:px-16 pt-16 space-y-8 pb-8 flex flex-col lg:flex-row lg:divide-x lg:divide-white lg:space-y-0 lg:justify-between xl:px-32'>
+    <div
+      className='w-full px-24 md:px-32 lg:px-16 pt-16 space-y-8 pb-8 flex flex-col lg:flex-row lg:divide-x lg:divide-white lg:space-y-0 lg:justify-between xl:px-32'
+      style={{ backgroundColor: '#09001A' }}
+    >
       <div className='flex-none flex px-8 lg:px-4 xl:px-8'>
         <Link href='/home'>
           <a className=''>
