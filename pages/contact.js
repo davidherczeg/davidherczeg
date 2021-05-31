@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import { useForm } from 'react-hook-form';
 import { useEffect } from 'react';
@@ -13,7 +14,25 @@ export default () => {
     setValue,
   } = useForm();
 
-  const onSubmit = async data => {};
+  const [loading, setLoading] = useState(false);
+
+  const onSubmit = async data => {
+    setLoading(true);
+
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (res.status === 201) {
+      const data = await res.json();
+    } else {
+      // error message
+    }
+
+    setLoading(false);
+  };
 
   return (
     <div className='w-full h-screen flex flex-col'>
@@ -33,21 +52,21 @@ export default () => {
                 Name *
               </label>
               <input
-                {...register('name')}
+                {...register('name', { required: true })}
                 className='rounded-md border-gray-300 bg-gray-50 shadow-sm w-full focus:border-blue-300 focus:ring-2 focus:ring-blue-200 focus:ring-opacity-50'
                 id='name'
                 type='text'
               />
             </div>
             <div>
-              <label htmlFor='emailAddress' className='text-sm'>
+              <label htmlFor='email' className='text-sm'>
                 Email Address *
               </label>
               <input
-                {...register('emailAddress')}
+                {...register('email', { required: true })}
                 className='rounded-md border-gray-300 bg-gray-50 shadow-sm w-full focus:border-blue-300 focus:ring-2 focus:ring-blue-200 focus:ring-opacity-50'
-                id='emailAddress'
-                type='text'
+                id='email'
+                type='email'
               />
             </div>
             <div>
@@ -55,7 +74,7 @@ export default () => {
                 Subject *
               </label>
               <input
-                {...register('subject')}
+                {...register('subject', { required: true })}
                 className='rounded-md border-gray-300 bg-gray-50 shadow-sm w-full focus:border-blue-300 focus:ring-2 focus:ring-blue-200 focus:ring-opacity-50'
                 id='subject'
                 type='text'
@@ -66,7 +85,7 @@ export default () => {
                 Message *
               </label>
               <textarea
-                {...register('message')}
+                {...register('message', { required: true })}
                 className='rounded-md border-gray-300 bg-gray-50 shadow-sm w-full focus:border-blue-300 focus:ring-2 focus:ring-blue-200 focus:ring-opacity-50'
                 id='message'
                 rows='4'
@@ -74,7 +93,7 @@ export default () => {
             </div>
             <button
               type='submit'
-              className='px-4 py-2 w-32 h-12 bg-black shadow-md rounded-md font-bold text-white text-sm'
+              className='px-4 py-2 w-32 h-12 bg-purple-700 shadow-md rounded-md font-bold text-white text-sm'
             >
               Send Message
             </button>
