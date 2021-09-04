@@ -36,7 +36,12 @@ handler.post(async (req, res) => {
     `,
   });
 
-  res.status(201).json({ message: 'Success' });
+  res.status(201).json({
+    message: info.accepted
+      ? '✔️ Your message was sent successfully. Thank you!'
+      : '❌ There was an error sending your message',
+    success: info.accepted,
+  });
 });
 
 export default handler;
