@@ -1,8 +1,41 @@
 @tailwind base;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'mallanna';
+  font-weight: 400;
+}
+
 @tailwind components;
 
 .nav-btn {
   @apply outline-none !important;
+}
+
+.nav-drawer-enter {
+  @apply transition-transform;
+  @apply duration-300;
+  transform: translateX(16rem);
+}
+
+.nav-drawer-enter-active {
+  transform: translateY(0);
+}
+
+.nav-drawer-exit {
+  transform: translateY(0);
+}
+
+.nav-drawer-exit-active {
+  @apply transition-transform;
+  @apply duration-300;
+  transform: translateX(16rem);
 }
 
 @tailwind utilities;

@@ -1,0 +1,12 @@
+const Section = props => {
+  const { label, children } = props;
+
+  return (
+    <div className='w-full bg-white px-24 md:px-32 lg:px-16 xl:px-32 py-8 lg:py-12 flex-auto'>
+      <h1 className='text-black text-5xl mb-8'>{label}</h1>
+      {children}
+    </div>
+  );
+};
+
+export default Section;
