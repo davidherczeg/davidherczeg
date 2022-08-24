@@ -60,8 +60,8 @@ export default () => {
             readMoreLink='/home'
           />
           <Card
-            imagePath='/igem_ualberta_2019.png'
-            imageAlt='iGEM UAlberta 2019'
+            imagePath='/igem_ualberta.png'
+            imageAlt='iGEM UAlberta'
             contributors='1+'
             link='https://2019.igem.org/Team:UAlberta'
             title='iGEM UAlberta 2019'

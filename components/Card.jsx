@@ -13,7 +13,7 @@ const Card = props => {
           src={imagePath}
           alt={imageAlt}
           width={320}
-          height={166}
+          height={180}
         />
       </div>
       <div className='px-6 py-4 flex flex-auto flex-col justify-between'>
