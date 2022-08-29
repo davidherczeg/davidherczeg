@@ -34,7 +34,7 @@ export default () => {
       <Section label=''>
         <div className='flex flex-col items-center lg:items-stretch space-y-12 lg:space-x-4 lg:space-y-0 lg:flex-row lg:justify-around'>
           <Card
-            imagePath='/tourloop.png'
+            imagePath='/tourloop.PNG'
             imageAlt='TourLoop'
             contributors='3'
             link='http://[2605:fd00:4:1001:f816:3eff:fe49:c687]:5000/'
@@ -53,7 +53,7 @@ export default () => {
             readMoreLink='/projects#vibes'
           />
           <Card
-            imagePath='/igem_ualberta_2018.png'
+            imagePath='/igem_ualberta_2018.PNG'
             imageAlt='iGEM UAlberta 2018'
             contributors='1+'
             link='https://2018.igem.org/Team:UAlberta'
