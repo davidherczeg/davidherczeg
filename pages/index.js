@@ -37,20 +37,20 @@ export default () => {
             imagePath='/tourloop.png'
             imageAlt='TourLoop'
             contributors='3'
-            link='http://162.246.157.222:5000/'
+            link='http://[2605:fd00:4:1001:f816:3eff:fe49:c687]:5000/'
             title='TourLoop'
             text='TourLoop is a route finding web application that optimizes routes for
             leisurely activities such as walking, biking or longboarding.'
-            readMoreLink='/home'
+            readMoreLink='/projects#tourloop'
           />
           <Card
-            imagePath='/igem_ualberta.png'
-            imageAlt='iGEM UAlberta'
-            contributors='1+'
-            link='https://2019.igem.org/Team:UAlberta'
-            title='iGEM UAlberta 2019'
-            text='Contributed to the development of the wiki for the UAlberta iGEM team in 2019.'
-            readMoreLink='/home'
+            imagePath='/vibes_2.PNG'
+            imageAlt='Vibes'
+            contributors='6'
+            link='https://github.com/CMPUT301F19T09/vibes'
+            title='Vibes'
+            text='Vibes is an Android app that lets users post, share, and track moods.'
+            readMoreLink='/projects#vibes'
           />
           <Card
             imagePath='/igem_ualberta_2018.png'
@@ -58,8 +58,8 @@ export default () => {
             contributors='1+'
             link='https://2018.igem.org/Team:UAlberta'
             title='iGEM UAlberta 2018'
-            text='Contributed to the development of the wiki for the UAlberta iGEM team in 2018.'
-            readMoreLink='/home'
+            text='Attributed for designing and developing the wiki for the UAlberta iGEM team in 2018.'
+            readMoreLink='/projects#igem-ualberta-2018'
           />
         </div>
       </Section>
