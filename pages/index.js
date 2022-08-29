@@ -22,7 +22,7 @@ export default () => {
               height={300}
             />
           </div>
-          <div className='space-y-4'>
+          <div className='flex flex-col justify-center space-y-4'>
             {texts.homeMain.map((text, index) => (
               <p key={index} className='text-lg'>
                 {text}
