@@ -4,7 +4,9 @@ import Logo from '../assets/svg/logo.svg';
 import { links } from '../data/links';
 import SocialLogo from './SocialLogo';
 
-const Footer = props => {
+const Footer = (props) => {
+  const email = 'david.herczeg.dev@gmail.com';
+
   return (
     <div
       className='w-full px-24 md:px-32 lg:px-16 pt-16 space-y-8 pb-8 flex flex-col lg:flex-row lg:divide-x lg:divide-white lg:space-y-0 lg:justify-between xl:px-32'
@@ -32,6 +34,7 @@ const Footer = props => {
         <div className='flex-intial flex flex-col px-8 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 sm:items-center'>
           <div className='flex flex-col space-y-4'>
             <SocialLogo
+              link='https://github.com/davidherczeg'
               src='/github_logo.svg'
               alt='Github'
               width={20}
@@ -39,6 +42,7 @@ const Footer = props => {
               username='davidherczeg'
             />
             <SocialLogo
+              link='https://www.linkedin.com/in/david-herczeg-b49553174/'
               src='/linkedin_logo.svg'
               alt='LinkedIn'
               width={20}
@@ -46,7 +50,7 @@ const Footer = props => {
               username='David Herczeg'
             />
           </div>
-          <div className='flex flex-col space-y-4'>
+          {/* <div className='flex flex-col space-y-4'>
             <SocialLogo
               src='/twitter_logo.svg'
               alt='Twitter'
@@ -61,13 +65,15 @@ const Footer = props => {
               height={20}
               username='davidherczeg_'
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='flex-none flex justify-center px-8 sm:justify-start lg:px-4 lg:justify-between lg:items-center'>
         <p className='text-white text-sm'>
           I can be reached at{' '}
-          <span className='text-purple-500'>david.herczeg@live.ca</span>
+          <a href={`mailto:${email}`}>
+            <span className='text-purple-500'>{email}</span>
+          </a>
         </p>
       </div>
     </div>

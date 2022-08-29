@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Card = props => {
+const Card = (props) => {
   const { imagePath, imageAlt, contributors, link, title, text, readMoreLink } =
     props;
 
@@ -31,7 +31,7 @@ const Card = props => {
             </div>
             <div className='flex items-center'>
               <a className='text-blue-500 mr-1' href={link} target='_blank'>
-                Link to application
+                Link
               </a>
               <Image
                 src='/external_link.svg'
