@@ -7,7 +7,7 @@ import { links } from '../data/links';
 
 const NavDrawer = dynamic(() => import('./NavDrawer'), { ssr: false });
 
-export default props => {
+export default (props) => {
   const { isShowing, toggle } = useDrawer();
 
   return (
@@ -16,7 +16,7 @@ export default props => {
       style={{ backgroundColor: '#09001A' }}
     >
       <div>
-        <Link href='/home'>
+        <Link href='/'>
           <a className=''>
             <Logo className='w-40 h-auto' />
           </a>
