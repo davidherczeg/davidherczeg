@@ -59,7 +59,7 @@ export default () => {
             link='https://2018.igem.org/Team:UAlberta'
             title='iGEM UAlberta 2018'
             text='Attributed for designing and developing the wiki for the UAlberta iGEM team in 2018.'
-            readMoreLink='/projects#igem-ualberta-2018'
+            readMoreLink='/projects#igem-ualberta-2017'
           />
         </div>
       </Section>

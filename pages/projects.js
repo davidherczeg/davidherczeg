@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Section from '../components/Section';
 import Footer from '../components/Footer';
 import Project from '../components/Project';
+import { texts } from '../data/texts';
 
 export default () => {
   return (
@@ -12,52 +13,54 @@ export default () => {
         <div className='flex space-x-12'>
           <div className='flex flex-col flex-1 divide-y'>
             <Project
+              id='tourloop'
               title='TourLoop'
               contributors='3'
-              timeline='Jan - Apr 2021'
-              appLink='http://162.246.157.222:5000/'
-              description='TourLoop is a route finding web application that optimizes routes
-            for leisurely activities such as walking, biking or longboarding.'
-              subDescription='Python, React, Neo4j'
+              timeline='Jan. - Apr. 2021'
+              appLink='http://[2605:fd00:4:1001:f816:3eff:fe49:c687]:5000/'
+              githubLink='https://github.com/TourLoop/TourLoop'
+              description={texts.projects.tourloop}
+              subDescription='Technology used: Python, React, Neo4j, Docker, Cybera Rapid Access Cloud'
               assetPath='/tourloop.PNG'
             />
             <Project
+              id='vibes'
+              title='Vibes'
+              contributors='6'
+              timeline='Oct. - Dec. 2019'
+              githubLink='https://github.com/CMPUT301F19T09/vibes'
+              description={texts.projects.vibes}
+              subDescription='Technology used: Java, Firebase, Cloud Firestore'
+              assetPath='/vibes_2.PNG'
+            />
+            <Project
+              id='igem-ualberta-2019'
               title='iGEM 2019 Wiki'
-              contributors='3'
-              timeline='Jan - Apr 2021'
-              appLink='http://162.246.157.222:5000/'
-              description='TourLoop is a route finding web application that optimizes routes
-            for leisurely activities such as walking, biking or longboarding.'
-              subDescription='Python, React, Neo4j'
+              contributors='1+'
+              timeline='Oct. 2019'
+              appLink='https://2019.igem.org/Team:UAlberta'
+              description={texts.projects.igemUalberta2019}
+              subDescription='Technology used: HTML, CSS, JQuery, MediaWiki'
               assetPath='/igem_ualberta_2019.PNG'
             />
             <Project
-              title='Vibes'
-              contributors='6'
-              timeline='Oct - Dec 2019'
-              githubLink='https://github.com/CMPUT301F19T09/vibes'
-              description='Vibes is...'
-              subDescription='Worked on project with ...'
-              assetPath='/vibes.PNG'
-            />
-            <Project
+              id='igem-ualberta-2018'
               title='iGEM 2018 Wiki'
-              contributors='3'
-              timeline='Jan - Apr 2021'
-              appLink='http://162.246.157.222:5000/'
-              description='TourLoop is a route finding web application that optimizes routes
-            for leisurely activities such as walking, biking or longboarding.'
-              subDescription='Python, React, Neo4j'
+              contributors='1+'
+              timeline='Oct. 2018'
+              appLink='https://2018.igem.org/Team:UAlberta'
+              description={texts.projects.igemUalberta2018}
+              subDescription='Technology used: HTML, CSS, JQuery, MediaWiki'
               assetPath='/igem_ualberta_2018.PNG'
             />
             <Project
+              id='igem-ualberta-2017'
               title='iGEM 2017 Wiki'
-              contributors='3'
-              timeline='Jan - Apr 2021'
-              appLink='http://162.246.157.222:5000/'
-              description='TourLoop is a route finding web application that optimizes routes
-            for leisurely activities such as walking, biking or longboarding.'
-              subDescription='Python, React, Neo4j'
+              contributors='1+'
+              timeline='Mar. - Nov. 2017'
+              appLink='https://2017.igem.org/Team:UAlberta'
+              description={texts.projects.igemUalberta2017}
+              subDescription='Technology used: HTML, CSS, JQuery, MediaWiki'
               assetPath='/igem_ualberta_2017.PNG'
             />
           </div>
