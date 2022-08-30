@@ -1,7 +1,15 @@
 import nextConnect from 'next-connect';
 import nodemailer from 'nodemailer';
+import { google } from 'googleapis';
 
 const handler = nextConnect();
+
+const oAuth2Client = new google.auth.OAuth2(
+  process.env.CLIENT_ID,
+  process.env.CLIENT_SECRET,
+  process.env.REDIRECT_URI
+);
+oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
 handler.post(async (req, res) => {
   const { name, email, subject, message } = req.body;
@@ -10,16 +18,19 @@ handler.post(async (req, res) => {
     return res.status(400).send('Missing fields');
   }
 
+  const accessToken = await oAuth2Client.getAccessToken();
+
   const transporter = nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
-    port: 587,
-    secure: false,
+    port: 465,
+    secure: true,
     auth: {
+      type: 'OAuth2',
       user: process.env.EMAIL,
-      pass: process.env.PASSWORD,
-    },
-    tls: {
-      rejectUnauthorized: false,
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
+      refreshToken: process.env.REFRESH_TOKEN,
+      accessToken: accessToken,
     },
   });
 
